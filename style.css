@@ -1,0 +1,143 @@
+*{
+    font-family: "Lexend Deca";
+    font-size: 15px;
+    color:hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5em;
+}
+.flex-container{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+img{
+    padding-bottom: 20px;
+}
+
+h1{
+    font-family: "Big Shoulders Display";
+    color: hsl(0, 0%, 95%);
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+.column{
+    flex:1;
+    flex-basis:20%;
+    padding: 50px;
+    border: 5px solid transparent;
+    border-radius:5px;
+}
+#sedans{
+    background-color: hsl(31, 77%, 52%);
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+}
+#suvs{
+    background-color:hsl(184, 100%, 22%);
+    border-radius:0px;
+}
+#luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    
+}
+
+button.b1{
+    width: 200px;
+    height: 60px;
+    color:hsl(31, 77%, 52%);
+    background-color: hsl(0, 0%, 95%);
+    border-style: solid;
+    border-width: 3px;
+    border-color: hsl(0, 0%, 95%);
+    border-radius: 30px;
+    margin: 80px auto 20px auto;
+}
+
+button.b1:hover{
+    width: 200px;
+    height: 60px;
+    color:hsla(0, 0%, 100%, 0.75);
+    background-color: transparent;
+    border-style: solid;
+    border-width: 3px;
+    border-color: hsl(0, 0%, 95%);
+    border-radius: 30px;
+    margin: 80px auto 20px auto;
+}
+
+button.b2{
+    width: 200px;
+    height: 60px;
+    color:hsl(184, 100%, 22%);
+    background-color: hsl(0, 0%, 95%);
+    border-style: solid;
+    border-width: 3px;
+    border-color: hsl(0, 0%, 95%);
+    border-radius: 30px;
+    margin: 80px auto 20px auto;
+}
+
+button.b2:hover{
+    width: 200px;
+    height: 60px;
+    color:hsla(0, 0%, 100%, 0.75);
+    background-color: transparent;
+    border-style: solid;
+    border-width: 3px;
+    border-color: hsl(0, 0%, 95%);
+    border-radius: 30px;
+    margin: 80px auto 20px auto;
+}
+
+button.b3{
+    width: 200px;
+    height: 60px;
+    color:hsl(179, 100%, 13%);
+    background-color: hsl(0, 0%, 95%);
+    border-style: solid;
+    border-width: 3px;
+    border-color: hsl(0, 0%, 95%);
+    border-radius: 30px;
+    margin: 80px auto 20px auto;
+}
+
+button.b3:hover{
+    width: 200px;
+    height: 60px;
+    color:hsla(0, 0%, 100%, 0.75);
+    background-color: transparent;
+    border-style: solid;
+    border-width: 3px;
+    border-color: hsl(0, 0%, 95%);
+    border-radius: 30px;
+    margin: 80px auto 20px auto;
+}
+
+@media (max-width:768px) {
+    .flex-container{
+        flex-basis:100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: left;
+    }
+    
+    .column{
+        flex-basis: 60%;
+        padding-right: 50px;
+    }
+
+    #sedans{
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0;
+    }
+    #luxury{
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+}
